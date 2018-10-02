@@ -23,7 +23,7 @@ int main()
                     cin >> item;
                 if(numItems < 5)
                         {
-                                list[numItems] == item; 
+                                list[numItems] = item; 
                                 numItems++;
                         }
                         else
@@ -32,5 +32,23 @@ int main()
                         }
                 }
         }while(input != 'q' && input != 'Q');
+        
+        /*cout << "==ITEMS TO BUY==\n"; 
+        cout << "1 " << list[0]  << endl;
+        cout << "2 " << list[1] << endl;
+        cout << "3 " << list[2] << endl;
+        cout << "4 " << list[3] << endl;
+        cout << "5 " << list[4] << endl; 
+        */
+
+        cout << "==ITEMS TO BUY==\n";
+        int num = 1; 
+        for(int index=0; index < 5; index++)
+        {
+            cout << num << " " << list[index] << endl;
+            num++;
+        }
+
         return 0;
+
 }
